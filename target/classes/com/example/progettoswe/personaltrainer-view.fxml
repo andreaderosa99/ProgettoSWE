@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="481.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.progettoswe.InterfaceController">
+   <children>
+      <DatePicker fx:id="datePickerPT" layoutX="212.0" layoutY="70.0" />
+      <ChoiceBox fx:id="chooseHourPT" layoutX="212.0" layoutY="102.0" prefWidth="150.0" />
+      <Label layoutX="130.0" layoutY="74.0" text="Scegli la data" />
+      <Label layoutX="137.0" layoutY="106.0" text="Scegli l'ora" />
+      <Label layoutX="185.0" layoutY="32.0" text="Gestisci gli appuntamenti">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="deleteUserReservation" layoutX="212.0" layoutY="410.0" mnemonicParsing="false" onMouseClicked="#deleteUserReservationPT" text="Cancella Appuntamento" />
+      <Button fx:id="CheckReservation" layoutX="212.0" layoutY="136.0" mnemonicParsing="false" onMouseClicked="#CheckReservation" text="Mostra appuntamenti" />
+      <ListView fx:id="AvailableappointmentListPT" layoutX="212.0" layoutY="201.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label fx:id="DeleteLabel" layoutX="47.0" layoutY="444.0" prefHeight="18.0" prefWidth="294.0" />
+      <Label fx:id="PTlabel" layoutX="47.0" layoutY="444.0" prefHeight="18.0" prefWidth="294.0" />
+   </children>
+</AnchorPane>
